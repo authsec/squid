@@ -8,6 +8,8 @@ RUN apk add --no-cache squid \
   libressl \
   python3 \
   && \
+  wget -P /usr/local/share/ca-certificates https://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1.crt.pem \
+  && \
   update-ca-certificates
 
 COPY start_squid.sh /usr/local/bin/start_squid.sh
