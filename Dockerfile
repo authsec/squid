@@ -3,12 +3,15 @@ LABEL maintainer="jens.frey@coffeecrew.org"
 
 ENV SERVE_CA_CERT=${SERVE_CA_CERT:-false}
 
+COPY additional_cas /tmp/additional_cas
+
 RUN apk add --no-cache squid \
   ca-certificates \
   libressl \
   python3 \
+  wget \
   && \
-  wget -P /usr/local/share/ca-certificates https://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1.crt.pem \
+  tr '\n' < /tmp/additional_cas | xargs -n 1 wget -P /usr/local/share/ca-certificates -c \
   && \
   update-ca-certificates
 
