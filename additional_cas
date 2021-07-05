@@ -1,4 +1,6 @@
 https://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1.crt.pem
+https://cacerts.digicert.com/GeoTrustEVRSACA2018.crt.pem
+https://cacerts.digicert.com/GeoTrustRSACA2018.crt.pem
 https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_EV_RSA_CA_2018.pem
 https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_RSA_CA_2018.pem
 https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_TLS_RSA_CA_G1.pem

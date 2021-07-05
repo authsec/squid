@@ -54,3 +54,12 @@ After you have put together a proper `squid.conf` configuration file in the same
 #$> docker run -e SERVE_CA_CERT=true --rm --name squid -p8000:8000 -p3128:3128 -p4128:4128 -v$(pwd)/squid.conf:/etc/squid/squid.conf -v$(pwd)/cacerts:/etc/ssl/proxy/certs -v$(pwd)/cakeys:/etc/ssl/proxy/private/ authsec/squid
 ```
 
+# Troubleshooting
+
+In case you run into problems such as `SSL Certificate error: certificate issuer (CA) not known:` you might want to import that additional CA into your copy of the image, or submit a pull request. Just add a line in the `additional_cas` file and the container build will download and install that CA certificate for you.
+
+The following command will e.g. give you all the none code signing certificates that Digicert lists should you need all of them.
+
+```
+#> curl https://www.digicert.com/kb/digicert-root-certificates.htm | grep -o '<a .*href=.*cacerts\.digicert\.com.*pem.*>' | perl -pe 's#<a href="(.*)">Download PEM</a>(.*)#$1#' | grep -v 'CodeSigning'
+```
