@@ -1,7 +1,10 @@
 https://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1.crt.pem
 https://cacerts.digicert.com/GeoTrustEVRSACA2018.crt.pem
 https://cacerts.digicert.com/GeoTrustRSACA2018.crt.pem
-https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_EV_RSA_CA_2018.pem
-https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_RSA_CA_2018.pem
-https://www.websecurity.symantec.com/content/dam/websitesecurity/support/digicert/thawte/ica/Thawte_TLS_RSA_CA_G1.pem
+# Thawte EV RSA CA 2018
+https://ssl-tools.net/certificates/9e848f52575c6b1a69d6ab62e0288bfad4a5564e.pem
+# Thawte RSA CA 2018
+https://ssl-tools.net/certificates/4deea7060d80babf1643b4e0f0104c82995075b7.pem
+# Thawte TLS RSA CA G1
+https://ssl-tools.net/certificates/c9fefc763d9548b487696f047acba0abe45c7bc1.pem
 https://www.quovadisglobal.com/wp-content/files/media/quovadis_quovadiseuropeevsslcag1.pem

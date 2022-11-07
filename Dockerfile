@@ -11,10 +11,10 @@ RUN apk add --no-cache squid \
   python3 \
   wget \
   && \
-  tr '\n' < /tmp/additional_cas | xargs -n 1 wget -P /usr/local/share/ca-certificates -c \
+  update-ca-certificates \
   && \
-  update-ca-certificates
-
+  sed '/^#/d' /tmp/additional_cas | tr '\n' | xargs -n 1 wget -P /usr/local/share/ca-certificates -c
+  
 COPY start_squid.sh /usr/local/bin/start_squid.sh
 COPY squid.conf /etc/squid/squid.conf
 
