@@ -8,3 +8,5 @@ https://ssl-tools.net/certificates/4deea7060d80babf1643b4e0f0104c82995075b7.pem
 # Thawte TLS RSA CA G1
 https://ssl-tools.net/certificates/c9fefc763d9548b487696f047acba0abe45c7bc1.pem
 https://www.quovadisglobal.com/wp-content/files/media/quovadis_quovadiseuropeevsslcag1.pem
+# Sectigo Public Server Authentication Root R46
+https://crt.sh/?d=4256644734
